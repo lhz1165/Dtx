@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>cn.stylefeng.guns</groupId>
+        <artifactId>guns-cloud-parent</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>message-center</artifactId>
+
+    <packaging>pom</packaging>
+
+    <name>guns-cloud-message</name>
+    <description>分布式事务的消息中心，spring cloud分布式事务解决方案，柔性事务解决方案</description>
+
+    <modules>
+        <module>guns-cloud-example-aapi</module>
+        <module>guns-cloud-example-account</module>
+        <module>guns-cloud-example-order</module>
+        <module>guns-cloud-message-api</module>
+        <module>guns-cloud-message-checker</module>
+        <module>guns-cloud-message-service</module>
+    </modules>
+
+</project>

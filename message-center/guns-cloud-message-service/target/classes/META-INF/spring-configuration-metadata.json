@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "roses.message",
+      "type": "cn.stylefeng.roses.message.config.properteis.MessageProperties",
+      "sourceType": "cn.stylefeng.roses.message.config.properteis.MessageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "roses.message.check-interval",
+      "type": "java.lang.Integer",
+      "description": "消息检查的时间段",
+      "sourceType": "cn.stylefeng.roses.message.config.properteis.MessageProperties"
+    }
+  ],
+  "hints": []
+}
