@@ -9,8 +9,8 @@
 ### try阶段
 
 1. 阶段奖励表状态更新为正在发放,
-2. 向mq发送消息header={order_id tx_id}  body={奖励记录}
-3. 收到消息 update 状态为已发送，然后本地事务表插入一条记录(tx_id desc  方便回查)，给mq发消息说commit/rollback
+2. 向mq发送事务消息header={order_id tx_id}  body={奖励记录}
+3. mq收到消息会有回调方法executeLocalTransaction（），在里面 update 状态为已发送，然后本地事务表插入一条记录(tx_id desc  方便回查)，给mq发消息说commit/rollback
 4. 如果未收到 刚刚的commit/rollback，就主动根据tx_id查本地事务表，如果有这条表示事务成功，没有就表示事务失败
 
 ### confirm/cancel阶段
